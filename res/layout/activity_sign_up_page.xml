@@ -1,0 +1,364 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#FF8A80" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:text="REGISTER"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="enter your name" >
+
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="user@domain"
+                    android:inputType="textEmailAddress" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="mobile number"
+                    android:inputType="phone" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                   
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.60"
+                        android:text="Blood group"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.26"
+                        android:background="#64B5F6"
+                        android:popupBackground="#64B5F6" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" 
+                        android:popupBackground="#64B5F6"
+                        android:background="#64B5F6"/>
+
+                </LinearLayout>
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Age"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight in kilo"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="00"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height in cm"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="00"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="house number/name" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="location" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="District"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.91" 
+                        android:popupBackground="#64B5F6"
+                        android:background="#64B5F6"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="State" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

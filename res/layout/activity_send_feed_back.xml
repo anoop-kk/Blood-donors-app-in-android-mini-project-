@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/abcbbg">
+    
+      <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="#FF8A80"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:text="Feed Back"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+    
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Caption"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+               android:layout_marginLeft="5dp" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Feed Back"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Here you can add feed backs about the donor"
+            android:inputType="textMultiLine" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </TableRow>
+    
+
+</LinearLayout>

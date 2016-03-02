@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abcb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_final"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.abcb.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.UserView"
+            android:label="@string/title_activity_user_view" >
+             
+        </activity>
+        <activity
+            android:name="com.example.abcb.SignUpPage"
+            android:label="@string/title_activity_sign_up_page" >
+          
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.example.abcb.SearchDonor"
+            android:label="@string/title_activity_search_donor" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.DonorList"
+            android:label="@string/title_activity_donor_list" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.DonoDetails"
+            android:label="@string/title_activity_dono_details" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.EditProfile"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.SendRequest"
+            android:label="@string/title_activity_send_request" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.ManageRequest"
+            android:label="@string/title_activity_manage_request" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.ConfirmReq"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.SendFeedBack"
+            android:label="@string/title_activity_send_feed_back" >
+        </activity>
+        <activity
+            android:name="com.example.abcb.LocateHospital"
+            android:label="@string/title_activity_locate_hospital" >
+        </activity>
+        <service 
+            android:name="com.example.abcb.LocationService"></service>
+    </application>
+
+</manifest>
